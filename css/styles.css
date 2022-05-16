@@ -1,0 +1,289 @@
+/* geral */
+
+html {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(12, 2, 2); 
+}
+a {
+    transition: .5s;
+}
+
+/* sidebar */ 
+
+#sidebar {
+	position: fixed;
+	height: 100%;
+	width: 300px;
+	background-color: #382f2f;
+	padding-top: 40px;
+}
+
+#sidebar h1 {
+	color: #FFF;
+	font-size: 32px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+#sidebar a {
+	color: #FFF;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+#sidebar a:hover {
+	color: #cf2e2e;
+}
+
+#sidebar li {
+	padding: 20px;
+}
+
+.sidebar-container {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+}
+
+.logo-time {
+	width: 100px;
+	height: 100px;
+	display: block;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* conteudo */
+
+.conteudo {
+	position: absolute;
+	left: 300px;
+	width: calc(100% - 300px);
+}
+
+.conteudo h1, .conteudo h2 {
+	color: #0e0202;
+	margin-bottom: 30px;
+}
+
+.conteudo h1 {
+	font-size: 48px;
+}
+
+.conteudo h2 {
+	font-size: 35px;
+}
+
+section {
+	padding-left: 50px;
+}
+
+/* bem vindo */
+
+#sessao-bemvindo {
+	padding-left: 0;
+}
+
+.sessao-bemvindo-conteudo {
+	padding-left: 50px;
+}
+
+#sessao-bemvindo .banner {
+	height: 500px;
+	background-image: url('../img/banner2.png');
+	background-position: center;
+	background-size: cover;
+}
+
+#sessao-bemvindo h1 {
+    margin-top: 70px;
+}
+
+#sessao-bemvindo::after, #sessao-sobre::after {
+    content: "";
+    display: block;
+    clear: both;
+    margin-bottom: 100px;
+}
+
+.sessao-minibanner {
+    width: 300px;
+    height: 400px;
+    background-image: url('../img/banner3.png');
+    background-position: center;
+    background-size: cover;
+    float: left;
+}
+
+.sessao-descricao {
+    position: absolute;
+    left: 370px;
+    padding-right: 30px;
+}
+
+.sessao-descricao p {
+    line-height: 2;
+    font-size: 16px;
+    margin-bottom: 30px;
+    margin-left: 25px;
+}
+
+.sessao-bemvindo-btn, form input[type=submit] {
+    background-color: #dd2b2b;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 40px;
+    transition: .5s;
+    display: block;
+    width: 100px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-left: 25px;
+}
+
+.sessao-bemvindo-btn:hover, form input [type=submit]:hover {
+    background-color: rgb(151, 30, 30);
+}
+
+/* sessao sobre */
+
+#sessao-sobre .sessao-minibanner {
+    float: right;
+    margin-right: 50px;
+    background-image: url('../img/banner4.png');
+}
+
+#sessao-sobre .sessao-descricao {
+    position: absolute;
+    left: 25px;
+    width: calc(100% - 400px);
+}
+
+/* galeria */
+
+.banner-galeria {
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    height: 200px;
+}
+
+#sessao-defesa, #sessao-meio, #sessao-ataque {
+    padding-right: 50px;
+    margin-bottom: 50px;
+}
+
+.defesa-imgs {
+    width: 18.8%;
+    margin-left: .5%;
+    margin-right: .5%;
+}
+
+#img1 {
+    background-image: url('../img/galeria1.png');
+    margin-left: 0;
+}
+
+#img2 {
+    background-image: url('../img/galeria2.png');
+}
+
+#img3 {
+    background-image: url('../img/galeria3.png');
+}
+
+#img4 {
+    background-image: url('../img/galeria4.png');
+    margin-right: 0;
+}
+
+.meio-imgs {    
+    width: 20%;
+    margin-left: .5%;
+    margin-right: .5%;
+}
+
+#img5 {
+    background-image: url('../img/galeria5.png');
+    margin-left: 0;
+}
+
+#img6 {
+    background-image: url('../img/galeria6.png');
+}
+
+#img7 {
+    background-image: url('../img/galeria7.png');
+    margin-right: 0;
+}
+
+.ataque-imgs {    
+    width: 20%;
+    margin-left: .5%;
+    margin-right: .5%;
+}
+
+#img8 {
+    background-image: url('../img/galeria8.png');
+    margin-left: 0;
+}
+
+#img9 {
+    background-image: url('../img/galeria9.png');
+}
+
+#img10 {
+    background-image: url('../img/galeria10.png');
+    margin-right: 0;
+}
+
+/* contato */
+
+#form-contato {
+    width: 500px;
+}
+
+#form-contato input[type=text], #form-contato input[type=email], #form-contato textarea {
+    display: block;
+    border: 1px solid #000203;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#form-contato input[type=text]:focus, #form-contato input[type=email]:focus, #form-contato textarea:focus {
+    border-color: #000203;
+}
+
+#form-contato textarea {
+    height: 150px;
+}
+
+#form-contato::placeholder {
+    color:#000203;
+}
+
+#form-contato input[type=submit] {
+    margin-left: 0;
+    font-size: 16px;
+    width: 180px;
+}
+
+/* footer */
+
+footer {
+    height: 100px;
+    padding-top: 150px;
+    color:rgb(151, 30, 30)
+}
+
+footer p {
+    text-align: center;
+    font-weight: bold;
+}
